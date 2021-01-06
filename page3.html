@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="Put your description here.">
+
+	<title>Gallery</title>
+
+	<!-- Links towards Bootstrap, Font-Awesome -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" type="image/png" href="https://charlottetusset.github.io/BootstrapWebsite/images/manekineko.jpg">
+
+</head> 
+
+<body>
+<div class="main">
+
+<!-- Navbar -->
+<div class="nav-container">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+		<a class="navbar-brand" href="index.html"><i>Reataurant</i></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+ 		</button>
+ 		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="navbar-home nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="navbar-menu nav-link" href="Menu.html"><i class="fas fa-utensils"></i> Menu</a>
+				</li>
+				<li class="nav-item active">
+					<a class="navbar-gallery nav-link" href="Gallery.html"><i class="fas fa-images"></i> Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="navbar-location nav-link" href="Location.html"><i class="fas fa-thumbtack"></i> Location</a>
+				</li>
+				<li class="nav-item">
+					<a class="navbar-contact nav-link" href="contact.html"><i class="fas fa-phone-square"></i> Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<br><br>
+
+<div class="Gallery-cont">
+
+	<p><img src="images/manekineko.jpg" alt="manekineko" id="cat" width="50px"><br>The passion of art brought us here. That is why we decided to organise exhibitions and workshops, in collaboration with institutions and cultural centres.</p> 
+
+	<!-- Pictures -->
+	<div class="Page3">
+		<div class="row" id="art">
+		  <div class="column">
+		    <img src="images/mont-fuji-estampe2.jpg" alt="fuji" style="width:100%">
+		  </div>
+		  <div class="column">
+		    <img src="images/artpic.jpg" alt="art" style="width:100%">
+		  </div>
+		  <div class="column">
+		    <img src="images/Totoro.jpg" alt="Totoro" style="width:100%">
+		  </div>
+		</div>
+	</div>
+<br><br>
+	<!-- Pagination -->
+	<nav aria-label="PicturesNavigation">
+	  <ul class="pagination pagination-lg justify-content-center">
+	    <li class="page-item">
+	      <a class="page-link" href="Gallery.html" aria-label="Previous">
+	        <span aria-hidden="true">&laquo;</span>
+	        <span class="sr-only">Previous</span>
+	      </a>
+	    </li>
+	    <li class="page-item"><a class="page-link" href="Gallery.html">1</a></li>
+	    <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
+	    <li class="page-item"><a class="page-link" href="page3.html">3</a></li>
+	    <li class="page-item">
+	      <a class="page-link" href="page3.html" aria-label="Next">
+	        <span aria-hidden="true">&raquo;</span>
+	        <span class="sr-only">Next</span>
+	      </a>
+	    </li>
+	  </ul>
+	</nav>
+</div>
+
+</div>
+</body>
+
+<footer>
+</footer>
+
+<script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+
+</html>

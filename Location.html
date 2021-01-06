@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+
+	<title>Location</title>
+
+	<!-- Links towards Bootstrap, Font-Awesome -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="manifest" href="manifest.json">
+	<link rel="icon" type="image/png" href="https://charlottetusset.github.io/BootstrapWebsite/images/manekineko.jpg">
+
+</head> 
+
+<body>
+<div class="main">
+
+<!-- Navbar -->
+<div class="nav-container">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><i>Restaurant</i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="navbar-home nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-menu nav-link" href="Menu.html"><i class="fas fa-utensils"></i> Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-gallery nav-link" href="Gallery.html"><i class="fas fa-images"></i> Gallery</a>
+        </li>
+        <li class="nav-item active">
+          <a class="navbar-location nav-link" href="Location.html"><i class="fas fa-thumbtack"></i> Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-contact nav-link" href="contact.html"><i class="fas fa-phone-square"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<br><br>
+
+<!-- Location and adress/opening hours of restaurant / by grid -->
+<div class="Loc-container">
+  <div class="row">
+  	<!-- Google Maps -->
+    <div class="col-sm map-container">
+    	<div class="map-responsive" id="map">
+    		<iframe title="Brussels" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJvwu4aNxYqDsRk8YrDda4uiQ&key=AIzaSyB9ZZerHrSS7OG2ErQ9C6-jbCtIUVgPXrA"></iframe>
+    	</div>
+    </div>
+    <div class="col-sm text-content">
+    	<h3>GCT</h3>
+    	<p>Thadagam road<br>Coimbatore<br></p>
+    	<p><b>Opening hours</b><br>Monday: closed<br>Tuesday to Thursday: 11AM - 10PM<br>Friday & Saturday: 11AM - Midnight<br>Sunday: 11AM - 4PM<br></p>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-sm text-content">
+    	<br><br><h3>GCT</h3>
+    	<p>Thadagam road<br>Coimbatore<br></p>
+    	<p><b>Opening hours</b><br>Monday to Thursday: 10AM - 10PM<br>Friday & Saturday: 11AM - Midnight<br>Sunday: 11AM - 4PM</p>
+    </div>
+    <div class="col-sm">
+    	<!-- Google Maps -->
+    	<div class="col map-container">
+    	<div class="map-responsive" id="map">
+    		<iframe title="Amsterdam" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJvwu4aNxYqDsRk8YrDda4uiQ&key=AIzaSyB9ZZerHrSS7OG2ErQ9C6-jbCtIUVgPXrA"></iframe>
+    	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<footer>
+</footer>
+
+<script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+
+</html>

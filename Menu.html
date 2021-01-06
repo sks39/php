@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="Put your description here.">
+
+	<title>Menu</title>
+
+	<!-- Links towards Bootstrap, Font-Awesome -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" type="image/png" href="https://charlottetusset.github.io/BootstrapWebsite/images/manekineko.jpg">
+</head> 
+
+<body>
+<div class="main">
+
+<!-- Navbar -->
+<div class="nav-container">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+		<a class="navbar-brand" href="index.html"><i>Restaurant</i></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+ 		</button>
+ 		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="navbar-home nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+				</li>
+				<li class="nav-item active">
+					<a class="navbar-menu nav-link" href="Menu.html"><i class="fas fa-utensils"></i> Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="navbar-gallery nav-link" href="Gallery.html"><i class="fas fa-images"></i> Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="navbar-location nav-link" href="Location.html"><i class="fas fa-thumbtack"></i> Location</a>
+				</li>
+				<li class="nav-item">
+					<a class="navbar-contact nav-link" href="contact.html"><i class="fas fa-phone-square"></i> Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<br><br><br>
+
+<!-- Intro -->
+<div class="title">
+	<img src="images/manekineko.jpg" alt="manekineko" width="50px"><br><br>
+	<p>At Ukiyo, we are concerned of what you have on your plate. We guarantee you fresh and organic food, as well as traceable. As far as possible, we get our food from small producers while preserving the true cooking tradition.</p>
+</div>
+
+<!-- Images -->
+<div class="menu-img">
+	<img class="img" src="images/chef.jpeg" alt="chef" style="width:47%">
+	<img class="img" src="images/chef-sushis.jpg" alt="chef-sushis" style="width:47%">
+</div>
+<br><br>
+
+<!-- Menu -->
+<div class="menu">
+	<div class="row">
+		<div class="col" id="Starters">
+			<h2>Starters</h2>
+			<ul class="list-group">
+			  <li class="list-group-item">Spicy wakame<span class="badge badge-pill badge-dark">Rs.300</span></li>
+			  <li class="list-group-item">Steamed edamame<span class="badge badge-pill badge-dark">Rs.300</span></li>
+			  <li class="list-group-item">Tempura schrimps<span class="badge badge-pill badge-dark">Rs.600</span></li>
+			  <li class="list-group-item">Miso Soup<span class="badge badge-pill badge-dark">Rs.300</span></li>
+			  <li class="list-group-item">Chef-inspired gyozas (6)<span class="badge badge-pill badge-dark">Rs.1000</span></li>
+			  <li class="list-group-item">Chef-inspired maki (6)<span class="badge badge-pill badge-dark">Rs.1000</span></li>
+			  <li class="list-group-item">Karaage chicken<span class="badge badge-pill badge-dark">Rs.1000</span></li>
+			</ul>
+		</div>
+		<div class="col" id="MainCourses">
+			<h2>Main courses</h2>
+			<ul class="list-group">
+			  <li class="list-group-item">Sea Donburi<span class="badge badge-pill badge-dark">Rs.800</span></li>
+			  <li class="list-group-item">Teriyaki Beef<span class="badge badge-pill badge-dark">Rs.600</span></li>
+			  <li class="list-group-item">Pork Ramen<span class="badge badge-pill badge-dark">Rs.600</span></li>
+			  <li class="list-group-item">Veggie Udon<span class="badge badge-pill badge-dark">Rs.500</span></li>
+			  <li class="list-group-item">Mix of sushis (12)<span class="badge badge-pill badge-dark">Rs.800</span></li>
+			  <li class="list-group-item">Surprise of the Chef<span class="badge badge-pill badge-dark">Rs.800</span></li>
+			</ul>
+		</div>
+		<div class="col" id="Desserts">
+			<h2>Desserts</h2>
+			<ul class="list-group">
+			  <li class="list-group-item">Mochi<span class="badge badge-pill badge-dark">Rs.600</span></li>
+			</ul>
+		</div>
+		<div class="col" id="Drinks">
+			<h2>Drinks</h2>
+			<ul class="list-group">
+			  <li class="list-group-item">Water<span class="badge badge-pill badge-dark">Rs.500</span></li>
+			  <li class="list-group-item">Homemade Lemonade<span class="badge badge-pill badge-dark">Rs.200</span></li>
+			  <li class="list-group-item">Ginger Kombucha<span class="badge badge-pill badge-dark">Rs.300</span></li>
+			  <li class="list-group-item">Selection of Japanese tea<span class="badge badge-pill badge-dark">Rs.200</span></li>
+			  <li class="list-group-item">Saké<span class="badge badge-pill badge-dark">Rs.600</span></li>
+			  <li class="list-group-item">Asahi beer<span class="badge badge-pill badge-dark">Rs.500</span></li>
+			  <li class="list-group-item">Selection of wines<span class="badge badge-pill badge-dark"></span></li>
+			</ul>
+		</div>	
+	</div>
+</div>
+
+
+
+</div>
+</body>
+
+<footer>
+</footer>
+
+<script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+
+</html>
